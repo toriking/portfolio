@@ -11,7 +11,7 @@
         animation: move ($time+5)+s ease $time+s infinite normal;
         -webkit-animation: move ($time+5)+s ease $time+s infinite normal;
         position: absolute;
-        top:120%;
+        top:130%;
     }
     .pos#{$i * 1}  {
         left: percentage($i*2/100);
