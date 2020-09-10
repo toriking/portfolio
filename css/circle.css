@@ -1,0 +1,90 @@
+.progress-base{height: 40px; max-width: 500px; width: 100%; background: lightgray; display: none;}
+.progressbar-html{animation: progressHtml 5s linear both; height: 40px;}
+.progressbar-css{animation: progressCss 5s linear both; height: 40px;}
+.progressbar-javascript{animation: progressJavascript 2.5s linear both; height: 40px;}
+.progressbar-java{animation: progressJava 1.5s linear both; height: 40px;}
+.progressbar-python{animation: progressPython 1.5s linear both; height: 40px;}
+.bbbb{transform: scale(8);}
+
+
+
+@keyframes progressHtml{
+    0%{width: 0; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px)}
+    100%{width: 95%; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px);}
+}
+@keyframes progressCss{
+    0%{width: 0; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px)}
+    100%{width: 90%; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px);}
+}
+@keyframes progressJavascript{
+    0%{width: 0; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px)}
+    100%{width: 50%; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px);}
+}
+@keyframes progressJava{
+    0%{width: 0; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px)}
+    100%{width: 30%; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px);}
+}
+@keyframes progressPython{
+    0%{width: 0; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px)}
+    100%{width: 30%; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px);}
+}
+.circle-area{ display: flex; flex-wrap: wrap;
+    justify-content: center; width: 100%;
+     margin: 0 auto; color: white;}
+.circle-base{max-width: 300px; max-height: 300px;}
+
+svg > text{font-weight: bold; }
+.percent{font-weight: bold; font-size: 2rem; position: absolute; margin-top: 120px; color: #9fdb81;}
+.circle-content{
+display: flex; flex-direction: column; justify-content: center;
+align-items: center; width: 130px; height: 130px; max-width: 100%; max-height:100%;
+ margin: 80px; 
+}
+circle.aaa{fill: transparent; stroke: lightgray; stroke-width: 20;  }
+.broken-line{fill: transparent; stroke: white; stroke-width: 20;
+stroke-dasharray: 4 33.68;
+
+}
+.progress-html{fill: transparent; stroke-width: 20; stroke: #FF6D00; 
+animation: progressLineHtml 4.5s linear both; transform: rotate(-90deg);}
+.progress-css{fill: transparent; stroke-width: 20; stroke: #039BE5;
+animation: progressLineCss 4s linear both; transform: rotate(-90deg);}
+.progress-javascript{fill: transparent; stroke-width: 20; stroke: #F2BF22; 
+animation: progressLineJavascript 2.5s linear both; transform: rotate(-90deg);}
+.progress-java{fill: transparent; stroke-width: 20; stroke: #FF0000;
+animation: progressLineJava 3s linear both; transform: rotate(-90deg);}
+.progress-python{fill: transparent; stroke-width: 20; stroke: #004d40;
+animation: progressLinePython 2.8s linear both; transform: rotate(-90deg);}
+.progress-kotlin{fill: transparent; stroke-width: 20; 
+animation: progressLineKotlin 2.8s linear both; transform: rotate(-90deg);}
+@keyframes progressLineHtml{
+0%{stroke-dasharray: 0 753.6;}
+100%{stroke-dasharray: 720 753.6;}
+}
+@keyframes progressLineCss{
+0%{stroke-dasharray: 0 753.6;}
+100%{stroke-dasharray: 680 753.6;}
+}@keyframes progressLineJavascript{
+0%{stroke-dasharray: 0 753.6;}
+100%{stroke-dasharray: 380 753.6;}
+}
+@keyframes progressLineJava{
+0%{stroke-dasharray: 0 753.6;}
+100%{stroke-dasharray: 230 753.6;}
+}
+@keyframes progressLinePython{
+0%{stroke-dasharray: 0 753.6;}
+100%{stroke-dasharray: 230 753.6;}
+}
+@keyframes progressLineKotlin{
+0%{stroke-dasharray: 0 753.6;}
+100%{stroke-dasharray: 125 753.6;}
+}
+@media (max-width:414px){
+    .circle-area{flex-direction: column; margin: 0; }
+    svg{display: none;}
+    .circle-content{flex-direction: row; width: auto; height: auto; margin: 0; padding: 0 10px 0 10px;}
+    
+    .percent{position: relative; margin: 0 ; }
+    .progress-base{display: block;}
+}
