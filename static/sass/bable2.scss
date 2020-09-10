@@ -1,7 +1,7 @@
 /*animation Play*/
 @for $i from 0 through 50 {
     $time: $i*0.2;
-    $scale: $i*0.3;
+    $scale: $i*0.2;
  
     .shake#{$i * 1} {
         animation: shake ($time+2)+s ease 0s infinite normal;

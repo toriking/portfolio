@@ -37,8 +37,8 @@
 }
 
 .scale1 {
-  transform: scale(0.3);
-  -webkit-transform: scale(0.3);
+  transform: scale(0.2);
+  -webkit-transform: scale(0.2);
 }
 
 .shake2 {
@@ -58,8 +58,8 @@
 }
 
 .scale2 {
-  transform: scale(0.6);
-  -webkit-transform: scale(0.6);
+  transform: scale(0.4);
+  -webkit-transform: scale(0.4);
 }
 
 .shake3 {
@@ -79,8 +79,8 @@
 }
 
 .scale3 {
-  transform: scale(0.9);
-  -webkit-transform: scale(0.9);
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
 }
 
 .shake4 {
@@ -100,8 +100,8 @@
 }
 
 .scale4 {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
 }
 
 .shake5 {
@@ -121,8 +121,8 @@
 }
 
 .scale5 {
-  transform: scale(1.5);
-  -webkit-transform: scale(1.5);
+  transform: scale(1);
+  -webkit-transform: scale(1);
 }
 
 .shake6 {
@@ -142,8 +142,8 @@
 }
 
 .scale6 {
-  transform: scale(1.8);
-  -webkit-transform: scale(1.8);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }
 
 .shake7 {
@@ -163,8 +163,8 @@
 }
 
 .scale7 {
-  transform: scale(2.1);
-  -webkit-transform: scale(2.1);
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
 }
 
 .shake8 {
@@ -184,8 +184,8 @@
 }
 
 .scale8 {
-  transform: scale(2.4);
-  -webkit-transform: scale(2.4);
+  transform: scale(1.6);
+  -webkit-transform: scale(1.6);
 }
 
 .shake9 {
@@ -205,8 +205,8 @@
 }
 
 .scale9 {
-  transform: scale(2.7);
-  -webkit-transform: scale(2.7);
+  transform: scale(1.8);
+  -webkit-transform: scale(1.8);
 }
 
 .shake10 {
@@ -226,8 +226,8 @@
 }
 
 .scale10 {
-  transform: scale(3);
-  -webkit-transform: scale(3);
+  transform: scale(2);
+  -webkit-transform: scale(2);
 }
 
 .shake11 {
@@ -247,8 +247,8 @@
 }
 
 .scale11 {
-  transform: scale(3.3);
-  -webkit-transform: scale(3.3);
+  transform: scale(2.2);
+  -webkit-transform: scale(2.2);
 }
 
 .shake12 {
@@ -268,8 +268,8 @@
 }
 
 .scale12 {
-  transform: scale(3.6);
-  -webkit-transform: scale(3.6);
+  transform: scale(2.4);
+  -webkit-transform: scale(2.4);
 }
 
 .shake13 {
@@ -289,8 +289,8 @@
 }
 
 .scale13 {
-  transform: scale(3.9);
-  -webkit-transform: scale(3.9);
+  transform: scale(2.6);
+  -webkit-transform: scale(2.6);
 }
 
 .shake14 {
@@ -310,8 +310,8 @@
 }
 
 .scale14 {
-  transform: scale(4.2);
-  -webkit-transform: scale(4.2);
+  transform: scale(2.8);
+  -webkit-transform: scale(2.8);
 }
 
 .shake15 {
@@ -331,8 +331,8 @@
 }
 
 .scale15 {
-  transform: scale(4.5);
-  -webkit-transform: scale(4.5);
+  transform: scale(3);
+  -webkit-transform: scale(3);
 }
 
 .shake16 {
@@ -352,8 +352,8 @@
 }
 
 .scale16 {
-  transform: scale(4.8);
-  -webkit-transform: scale(4.8);
+  transform: scale(3.2);
+  -webkit-transform: scale(3.2);
 }
 
 .shake17 {
@@ -373,8 +373,8 @@
 }
 
 .scale17 {
-  transform: scale(5.1);
-  -webkit-transform: scale(5.1);
+  transform: scale(3.4);
+  -webkit-transform: scale(3.4);
 }
 
 .shake18 {
@@ -394,8 +394,8 @@
 }
 
 .scale18 {
-  transform: scale(5.4);
-  -webkit-transform: scale(5.4);
+  transform: scale(3.6);
+  -webkit-transform: scale(3.6);
 }
 
 .shake19 {
@@ -415,8 +415,8 @@
 }
 
 .scale19 {
-  transform: scale(5.7);
-  -webkit-transform: scale(5.7);
+  transform: scale(3.8);
+  -webkit-transform: scale(3.8);
 }
 
 .shake20 {
@@ -436,8 +436,8 @@
 }
 
 .scale20 {
-  transform: scale(6);
-  -webkit-transform: scale(6);
+  transform: scale(4);
+  -webkit-transform: scale(4);
 }
 
 .shake21 {
@@ -457,8 +457,8 @@
 }
 
 .scale21 {
-  transform: scale(6.3);
-  -webkit-transform: scale(6.3);
+  transform: scale(4.2);
+  -webkit-transform: scale(4.2);
 }
 
 .shake22 {
@@ -478,8 +478,8 @@
 }
 
 .scale22 {
-  transform: scale(6.6);
-  -webkit-transform: scale(6.6);
+  transform: scale(4.4);
+  -webkit-transform: scale(4.4);
 }
 
 .shake23 {
@@ -499,8 +499,8 @@
 }
 
 .scale23 {
-  transform: scale(6.9);
-  -webkit-transform: scale(6.9);
+  transform: scale(4.6);
+  -webkit-transform: scale(4.6);
 }
 
 .shake24 {
@@ -520,8 +520,8 @@
 }
 
 .scale24 {
-  transform: scale(7.2);
-  -webkit-transform: scale(7.2);
+  transform: scale(4.8);
+  -webkit-transform: scale(4.8);
 }
 
 .shake25 {
@@ -541,8 +541,8 @@
 }
 
 .scale25 {
-  transform: scale(7.5);
-  -webkit-transform: scale(7.5);
+  transform: scale(5);
+  -webkit-transform: scale(5);
 }
 
 .shake26 {
@@ -562,8 +562,8 @@
 }
 
 .scale26 {
-  transform: scale(7.8);
-  -webkit-transform: scale(7.8);
+  transform: scale(5.2);
+  -webkit-transform: scale(5.2);
 }
 
 .shake27 {
@@ -583,8 +583,8 @@
 }
 
 .scale27 {
-  transform: scale(8.1);
-  -webkit-transform: scale(8.1);
+  transform: scale(5.4);
+  -webkit-transform: scale(5.4);
 }
 
 .shake28 {
@@ -604,8 +604,8 @@
 }
 
 .scale28 {
-  transform: scale(8.4);
-  -webkit-transform: scale(8.4);
+  transform: scale(5.6);
+  -webkit-transform: scale(5.6);
 }
 
 .shake29 {
@@ -625,8 +625,8 @@
 }
 
 .scale29 {
-  transform: scale(8.7);
-  -webkit-transform: scale(8.7);
+  transform: scale(5.8);
+  -webkit-transform: scale(5.8);
 }
 
 .shake30 {
@@ -646,8 +646,8 @@
 }
 
 .scale30 {
-  transform: scale(9);
-  -webkit-transform: scale(9);
+  transform: scale(6);
+  -webkit-transform: scale(6);
 }
 
 .shake31 {
@@ -667,8 +667,8 @@
 }
 
 .scale31 {
-  transform: scale(9.3);
-  -webkit-transform: scale(9.3);
+  transform: scale(6.2);
+  -webkit-transform: scale(6.2);
 }
 
 .shake32 {
@@ -688,8 +688,8 @@
 }
 
 .scale32 {
-  transform: scale(9.6);
-  -webkit-transform: scale(9.6);
+  transform: scale(6.4);
+  -webkit-transform: scale(6.4);
 }
 
 .shake33 {
@@ -709,8 +709,8 @@
 }
 
 .scale33 {
-  transform: scale(9.9);
-  -webkit-transform: scale(9.9);
+  transform: scale(6.6);
+  -webkit-transform: scale(6.6);
 }
 
 .shake34 {
@@ -730,8 +730,8 @@
 }
 
 .scale34 {
-  transform: scale(10.2);
-  -webkit-transform: scale(10.2);
+  transform: scale(6.8);
+  -webkit-transform: scale(6.8);
 }
 
 .shake35 {
@@ -751,8 +751,8 @@
 }
 
 .scale35 {
-  transform: scale(10.5);
-  -webkit-transform: scale(10.5);
+  transform: scale(7);
+  -webkit-transform: scale(7);
 }
 
 .shake36 {
@@ -772,8 +772,8 @@
 }
 
 .scale36 {
-  transform: scale(10.8);
-  -webkit-transform: scale(10.8);
+  transform: scale(7.2);
+  -webkit-transform: scale(7.2);
 }
 
 .shake37 {
@@ -793,8 +793,8 @@
 }
 
 .scale37 {
-  transform: scale(11.1);
-  -webkit-transform: scale(11.1);
+  transform: scale(7.4);
+  -webkit-transform: scale(7.4);
 }
 
 .shake38 {
@@ -814,8 +814,8 @@
 }
 
 .scale38 {
-  transform: scale(11.4);
-  -webkit-transform: scale(11.4);
+  transform: scale(7.6);
+  -webkit-transform: scale(7.6);
 }
 
 .shake39 {
@@ -835,8 +835,8 @@
 }
 
 .scale39 {
-  transform: scale(11.7);
-  -webkit-transform: scale(11.7);
+  transform: scale(7.8);
+  -webkit-transform: scale(7.8);
 }
 
 .shake40 {
@@ -856,8 +856,8 @@
 }
 
 .scale40 {
-  transform: scale(12);
-  -webkit-transform: scale(12);
+  transform: scale(8);
+  -webkit-transform: scale(8);
 }
 
 .shake41 {
@@ -877,8 +877,8 @@
 }
 
 .scale41 {
-  transform: scale(12.3);
-  -webkit-transform: scale(12.3);
+  transform: scale(8.2);
+  -webkit-transform: scale(8.2);
 }
 
 .shake42 {
@@ -898,8 +898,8 @@
 }
 
 .scale42 {
-  transform: scale(12.6);
-  -webkit-transform: scale(12.6);
+  transform: scale(8.4);
+  -webkit-transform: scale(8.4);
 }
 
 .shake43 {
@@ -919,8 +919,8 @@
 }
 
 .scale43 {
-  transform: scale(12.9);
-  -webkit-transform: scale(12.9);
+  transform: scale(8.6);
+  -webkit-transform: scale(8.6);
 }
 
 .shake44 {
@@ -940,8 +940,8 @@
 }
 
 .scale44 {
-  transform: scale(13.2);
-  -webkit-transform: scale(13.2);
+  transform: scale(8.8);
+  -webkit-transform: scale(8.8);
 }
 
 .shake45 {
@@ -961,8 +961,8 @@
 }
 
 .scale45 {
-  transform: scale(13.5);
-  -webkit-transform: scale(13.5);
+  transform: scale(9);
+  -webkit-transform: scale(9);
 }
 
 .shake46 {
@@ -982,8 +982,8 @@
 }
 
 .scale46 {
-  transform: scale(13.8);
-  -webkit-transform: scale(13.8);
+  transform: scale(9.2);
+  -webkit-transform: scale(9.2);
 }
 
 .shake47 {
@@ -1003,8 +1003,8 @@
 }
 
 .scale47 {
-  transform: scale(14.1);
-  -webkit-transform: scale(14.1);
+  transform: scale(9.4);
+  -webkit-transform: scale(9.4);
 }
 
 .shake48 {
@@ -1024,8 +1024,8 @@
 }
 
 .scale48 {
-  transform: scale(14.4);
-  -webkit-transform: scale(14.4);
+  transform: scale(9.6);
+  -webkit-transform: scale(9.6);
 }
 
 .shake49 {
@@ -1045,8 +1045,8 @@
 }
 
 .scale49 {
-  transform: scale(14.7);
-  -webkit-transform: scale(14.7);
+  transform: scale(9.8);
+  -webkit-transform: scale(9.8);
 }
 
 .shake50 {
@@ -1066,8 +1066,8 @@
 }
 
 .scale50 {
-  transform: scale(15);
-  -webkit-transform: scale(15);
+  transform: scale(10);
+  -webkit-transform: scale(10);
 }
 
 .bable-frame {
