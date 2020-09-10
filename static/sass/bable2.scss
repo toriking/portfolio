@@ -10,9 +10,8 @@
     .move#{$i * 1}  {
         animation: move ($time+5)+s ease $time+s infinite normal;
         -webkit-animation: move ($time+5)+s ease $time+s infinite normal;
- 
         position: absolute;
-        top:100%;
+        top:120%;
     }
     .pos#{$i * 1}  {
         left: percentage($i*2/100);
@@ -32,10 +31,6 @@ position: relative; cursor: pointer;
 height: 20%; border-radius: 100%; background: rgba(255,255,255,0.8);
 position: absolute; right: 15%; top: 15%; filter: blur(2px);
 transform: rotate(45deg) scaleY(0.8);
-}
-.move{animation: move 5s cubic-bezier(0.47,0,0.745,0.715) 0s infinite normal;
--webkit-animation: move 5s cubic-bezier(0.47,0,0.745,0.715) 0s infinite normal;
-position: absolute; top: 100%;
 }
 @keyframes move{
 0%{transform: translateY(0px);}
