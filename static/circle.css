@@ -1,0 +1,237 @@
+
+.circle{
+    position: relative; width: 120px; height: 120px;
+    border-radius: 50%; text-align: center;
+    overflow: hidden; z-index: 1; margin: auto;
+}
+
+.circle::before{
+content: ""; display: block; position: absolute; top: 0;
+left: -60px; width: 120px; height: 120px;
+transform-origin: right 60px; z-index: 2;
+}
+
+.circle::after{
+    content: ""; display: block; position: absolute;
+    top: 0; left: 60px; width: 120px; height: 120px;
+    transform-origin: left 60px; z-index: 3;
+}
+
+.circle .circle_inner{
+    position: absolute; top: 10px; left: 10px; width: 100px;
+    height: 100px; padding-top: 38px; background: #fff;
+    border-radius: 50%; z-index: 4;
+}
+
+.skil_sheet{display: none;}
+
+.circle:hover ~ .skil_sheet{
+ position: absolute; left: 120px; display: block; z-index: 5;
+    background: red; opacity: 0.5; width: 200px; height: 200px;
+}
+
+.circle.html{
+    background: red;
+}
+.circle.html::before{
+    background: rgb(255, 128, 128);
+    animation: rotateCircleLeftHtml 2s linear both;
+}
+.circle.html::after{
+    background: rgb(255, 128, 128);
+    animation: rotateCircleRightHtml 2s linear both;
+}
+.circle.css{
+    background: blue;
+}
+.circle.css::before{
+    background: rgb(180, 180, 255);
+    animation: rotateCircleLeftCss 2s linear both;
+}
+.circle.css::after{
+    background: rgb(180, 180, 255);
+    animation: rotateCircleRightCss 2s linear both;
+}
+.circle.javascript{
+    background: yellow;
+}
+.circle.javascript::before{
+    background: rgb(255, 255, 180);
+    animation: rotateCircleLeftJavascript 2s linear both;
+}
+.circle.javascript::after{
+    background: rgb(255, 255, 180);
+    animation: rotateCircleRightJavascript 2s linear both;
+}
+.circle.python{
+    background: green;
+}
+.circle.python::before{
+    background: rgb(180, 255, 180);
+    animation: rotateCircleLeftPython 2s linear both;
+}
+.circle.python::after{
+    background: rgb(180, 255, 180);
+    animation: rotateCircleRightPython 2s linear both;
+}
+.circle.java{
+    background: orange;
+}
+.circle.java::before{
+    background: rgb(255, 229, 180);
+    animation: rotateCircleLeftJava 2s linear both;
+}
+.circle.java::after{
+    background: rgb(255, 229, 180);
+    animation: rotateCircleRightJava 2s linear both;
+}
+@keyframes rotateCircleRightHtml{
+    0%{
+        transform: rotate(0deg);
+        background: rgb(255, 128, 128);
+    }
+    50%{
+        transform: rotate(180deg);
+        background: rgb(255, 128, 128);
+    }
+    50.01%{
+        transform: rotate(360deg);
+        background: red;
+    }
+    100%{
+        transform: rotate(360deg);
+        background: red;
+      }
+
+}
+@keyframes rotateCircleLeftHtml{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(160deg);
+    }
+}
+@keyframes rotateCircleRightCss{
+    0%{
+        transform: rotate(0deg);
+        background: rgb(180, 180, 255);
+    }
+    50%{
+        transform: rotate(180deg);
+        background: rgb(180, 180, 255);
+    }
+    50.01%{
+        transform: rotate(360deg);
+        background: blue;
+    }
+    100%{
+        transform: rotate(360deg);
+        background: blue;
+      }
+
+}
+@keyframes rotateCircleLeftCss{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+@keyframes rotateCircleRightJavascript{
+    0%{
+        transform: rotate(0deg);
+        background: rgb(255, 255, 180);
+    }
+    50%{
+        transform: rotate(180deg);
+        background: rgb(255, 255, 180);
+    }
+    50.01%{
+        transform: rotate(0deg);
+        background: yellow;
+    }
+    100%{
+        transform: rotate(0deg);
+        background: yellow;
+      }
+
+}
+@keyframes rotateCircleLeftJavascript{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes rotateCircleRightPython{
+    0%{
+        transform: rotate(0deg);
+        background: rgb(180, 255, 180);
+    }
+    50%{
+        transform: rotate(180deg);
+        background: rgb(180, 255, 180);
+    }
+    50.01%{
+        transform: rotate(360deg);
+        background: green;
+    }
+    100%{
+        transform: rotate(360deg);
+        background: green;
+      }
+
+}
+@keyframes rotateCircleLeftPython{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(60deg);
+    }
+}
+@keyframes rotateCircleRightJava{
+    0%{
+        transform: rotate(0deg);
+        background: rgb(255, 229, 180);
+    }
+    50%{
+        transform: rotate(180deg);
+        background: rgb(255, 229, 180);
+    }
+    50.01%{
+        transform: rotate(360deg);
+        background: orange;
+    }
+    100%{
+        transform: rotate(360deg);
+        background: orange;
+      }
+
+}
+@keyframes rotateCircleLeftJava{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
