@@ -10,14 +10,5 @@ triggers.forEach(function(target) {
         setTimeout(()=>{
             target.style.display = 'block';
             },5000);
-            },false);
-        // target.addEventListener('touchstart', ()=>{
-        //     target.style.display = 'none';
-        //     audio = new Audio;
-        //     audio.src = "static/images/bubble-burst.mp3";
-        //     audio.play();
-        //     setTimeout(()=>{
-        //         target.style.display = 'block';
-        //         },5000);
-        // },false)    
+            },false);   
         });
