@@ -1,97 +1,230 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- site icon -->
-        <meta rel="icon" href="static/images/." size="16x16" type="image/png">
-        
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-        <!-- custom css -->
-        <link rel="stylesheet" href="static/default.css">  
-        <link rel="stylesheet" href="static/circle.css">
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-        $(function(){
-            $('a[href^="#"]').click(function(){
-              var adjust = 0;
-              var speed = 300;
-              var href= $(this).attr("href");
-              var target = $(href == "#" || href == "" ? 'html' : href);
-              var position = target.offset().top + adjust;
-              $('body,html').animate({scrollTop:position}, speed, 'swing');
-              return false;
-            });
-          });
-        </script>
-        <title>自己紹介</title>
-    </head>
-<body>
-    <nav class="site-nav">
+<head>
+    <meta charset="UTF-8">
+    <!-- レスポンシブ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- twitter card -->
+    <meta name="twitter:site" content="@toriton2020">
+    <meta name="og:url" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:card" content="Summary Card">
+    <meta name="og:image" content="static/images/.">
+    <!-- IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!-- アドビフォント -->
+    <link rel="stylesheet" href="https://use.typekit.net/rrc3cps.css">
+    <!-- fontawesome　CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- ファビコン -->
+    <link rel="icon" href="static/images/rei.ico">
+    <!-- デフォルト -->
+    <link rel="stylesheet" href="css/default.css">
+    <!-- バブル -->
+    <link rel="stylesheet" href="static/sass/bable2.css">
+    <!-- 円グラフ -->
+    <link rel="stylesheet" href="css/circle.css">
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+</head>
+<body> 
+<nav class="site-nav">
+    <div class="nav-container">
+            
         <ul class="site-nav-list">
-            <li class=""><a href="#1">Top</a></li>
-            <li class=""><a href="#3">SKILL</a></li>
-            <li class=""><a href="#2">PROFILE</a></li>
-            <li class=""><a href="#4">work</a></li>
+            <a class="logo"><img src="" >aaa</a>
+            <li class="nav-item">
+                <a href="#profile">
+                    <i class="fas fa-user"></i>
+                    <span>PROFILE</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-skill" href="#skill">
+                    <i class="fas fa-lightbulb"></i>
+                    SKILL
+                </a>
+            </li>
+            <li class="nav-item etc">
+                <i class="fas fa-bars"></i>
+                <ul>
+                    <li class="thankyou">見ていただきありがとうございます。</li>
+                    <li >bb</li> 
+                    <li >cc</li>
+                    <li >dd</li> 
+                    <li >ee</li>
+                    <li class="thankyou">ff</li> 
+                </ul>    
+            </li>
+            <li class="nav-item">
+                <a href="#work">
+                    <i class="fas fa-tasks"></i>
+                    <span>WORK</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>CONTACT</span>
+                </a>
+            </li>
         </ul>
-    </nav>
+    </div>            
+</nav>
+<a class="top-scroll" href="#top">
 
-    <div class="top_image" id="1">
-            <img src="static/images/sora.jpg">
-            <div></div>
-        </div>
-<div class="profile-frame" id="2">
-    <h1>PROFILE</h1>
+    
+        <i class="fas fa-arrow-up" style="width: 100%;"></i>Top
+    
+</a>
+<div class="bable-frame" id="bable-rei">
+    
+    <h2><span>Tomoki</span><span>Portfolio</span>
+        <div class="bable-item" style=""></div>
+        
+    </h2>
 </div>
+<section class="profile-skill">
+    <h1 id="profile">PROFILE</h1>
+    <div class="profile-area">
+        <img src="images/" alt="bb">
+        <div class="text-area">
+            <h4>はじめまして。<span class="onepoint">ともき</span>です
+            </h4>
+            <p class="profile-text">
+             愛知県在住。製造業の仕事をしています。</p>
+             (<a class="twitter-link" href="https://twitter.com/toriton2020">
+                <i class="fab fa-twitter"></i>@toriton2020</a>)
+        </div>
+    </div>
+    <h1 id="skill">SKILL</h1>
+    <div class="circle-area">
+        <div class="circle-content">
+            <img class="skill-img" src="static/images/html5.svg">
+            <svg width="260" height="260" style="position: absolute;">
+            <text x="50%" y="30%" text-anchor="middle" fill="#FF6D00" font-size="2rem">HTML</text>
+            <circle class="aaa" cx="130" cy="130" r="120"></circle>
+            <circle class="progress-html" cx="-130" cy="130" r="120"></circle>
+            <circle class="broken-line" cx="130" cy="130" r="120"></circle>
+            </svg>
+            <div class="progress-base">
+                <div class="progressbar-html"><p>HTML</p></div>
+            </div>
+            <div class="percent" id="html"></div>
+        </div>
+   
+    <div class="circle-content">
+        <img src="static/images/css3.svg">
+        <svg width="260" height="260" style="position: absolute;">
+        <text x="50%" y="30%" text-anchor="middle" fill="#039BE5" font-size="2rem">CSS</text>
+        <circle class="aaa" cx="130" cy="130" r="120"></circle>
+        <circle class="progress-css" cx="-130" cy="130" r="120"></circle>
+        <circle class="broken-line" cx="130" cy="130" r="120"></circle>
+        </svg>
+        <div class="progress-base">
+            <div class="progressbar-css"><p>CSS</p></div>
+        </div>
+        <div class="percent" id="css"></div>
+    </div>    
+
+    <div class="circle-content">
+        <img class="skill-img" src="static/images/javascript3.svg">  
+        <svg width="260" height="260" style="position: absolute;">
+        <text x="50%" y="30%" text-anchor="middle" fill="#F2BF22" font-size="2rem">Javascript</text>
+        <circle class="aaa" cx="130" cy="130" r="120"></circle>
+        <circle class="progress-javascript" cx="-130" cy="130" r="120"></circle>
+        <circle class="broken-line" cx="130" cy="130" r="120"></circle>
+        </svg>
+        <div class="progress-base">
+            <div class="progressbar-javascript"><p>Javascript</p></div>
+        </div>
+        <div class="percent" id="javascript"></div>
+    </div>
+
+    <div class="circle-content">
+        <img src="static/images/java.svg">   
+        <svg width="260" height="260" style="position: absolute;">
+        <text x="50%" y="30%" text-anchor="middle" fill="#FF0000" font-size="2rem">Java</text>
+        <circle class="aaa" cx="130" cy="130" r="120"></circle>
+        <circle class="progress-java" cx="-130" cy="130" r="120"></circle>
+        <circle class="broken-line" cx="130" cy="130" r="120"></circle>
+        </svg>
+        <div class="progress-base">
+            <div class="progressbar-java"><p>Java</p></div>
+        </div>
+        <div class="percent" id="java"></div>
+    </div>
+
+    <div class="circle-content">
+        <img class="" src="static/images/python.svg">    
+        <svg width="260" height="260" style="position: absolute;">
+        <text x="50%" y="30%" text-anchor="middle" fill="#004d40" font-size="2rem">Python</text>
+        <circle class="aaa" cx="130" cy="130" r="120"></circle>
+        <circle class="progress-python" cx="-130" cy="130" r="120"></circle>
+        <circle class="broken-line" cx="130" cy="130" r="120"></circle>
+        </svg>
+        <div class="progress-base">
+            <div class="progressbar-python"><p>Python</p></div>
+        </div>
+        <div class="percent" id="python"></div>
+    </div>
+
+</div>
+<h4>フレームワークなど</h4>
+<div class="" style="display: flex; justify-content: center; width: 100%;">
+   
     
-<div class="SkillsView" id="3">
-    <h1>
-        <i class="fab fa-apple"></i>
-        SKILL <i class="fab fa-apple"></i>
-    </h1>
-    <ul class="circle-frame">
-        <li class="circle html">
-            <div class="circle_inner">HTML</div>
-        </li>
-        <div class="skil_sheet">aaaaa</div>
-        <li class="circle css">
-            <div class="circle_inner">
-                <div><img src="static/images/css3.svg">
-                </div>CSS</div>
-        </li>
-
-        <li class="circle javascript mx-1">
-            <div class="circle_inner">Javascript</div>
-        </li>
-        
-        <li class="circle python mx-1">
-            <div class="circle_inner">Python<div>60%</div></div>
-        </li>
-        
-        <li class="circle java mx-1">
-            <div class="circle_inner">Java</div>
-        </li>
-
-    </ul>
-</div>    
-    <!-- mobil -->
-    <div class="MobilViewSkils">
-    <ul class="">
-        <li class=""><img src="static/images/html5.svg" alt="">HTML
-        <progress max="100" value="10" class="">10%</progress>
-        </li>
-        <li class=""><img src="static/images/css3.svg" alt="">CSS</li>
-        <li class=""><img src="static/images/.svg" alt="">Javascript</li>
     
-    </ul>
-   </div>
+</div>
+</section>
 
+<section>
+    <h1 id="work">WORK</h1>
+    <div class="work-frame">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+</section>
+
+    
+    <div class="contact-frame">
+        <h1 id="contact">CONTACT</h1>
+        <form action="">
+            <div class="yourname">
+                <label for="name"></label>
+                <input id="name" type="text" name="" placeholder="名前">
+            </div>
+            <div class="yourmail">
+                <label for="mail"></label>
+                <input id="mail" type="text" name="" placeholder="メールアドレス">
+            </div>
+            <div class="yourmessage">
+                <label for="message" ></label>
+                <textarea id="yourname" name="" placeholder="メッセージを入力してください"></textarea>
+            </div>
+        </form>
+        <button type="submit" name="button" value="送信">送信</button>
+    </div>
 <footer>
-    
+    <a class="reference" href="https://taikinodesign.com/"><img src="static/images/logo.black.png"></a>
+    <a class="reference" href="">monolith Portfolio</a>
+    <small>2020 ⓒ TomokiDesign</small>
 </footer>
+<script type="text/javascript" src="bubble-create.js" defer></script>
+<script type="text/javascript" src="js/bubble-burst.js" defer></script>
+<script type="text/javascript" src="js/scroll.js" defer></script>
+<script type="text/javascript" src="js/count.js" defer></script>
+<!-- <script type="text/javascript" src="js/bubble-generate.js"></script> -->
+<!-- <script type="text/javascript" src="js/fadein.js"></script> -->
+
 
 </body>
 </html>
