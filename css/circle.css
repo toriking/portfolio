@@ -1,16 +1,18 @@
-.progress-base{height: 40px; max-width: 500px; width: 100%; background: lightgray; display: none;}
-.progressbar-html{animation: progressHtml 5s linear both; height: 40px;}
-.progressbar-css{animation: progressCss 5s linear both; height: 40px;}
-.progressbar-javascript{animation: progressJavascript 2.5s linear both; height: 40px;}
-.progressbar-java{animation: progressJava 1.5s linear both; height: 40px;}
-.progressbar-python{animation: progressPython 1.5s linear both; height: 40px;}
+.progress-base{height: 30px; max-width: 200px; width: 100%;
+     background: lightgray; display: none;
+      margin-right: 90px; border-radius: 30px;}
+.progressbar-html{animation: progressHtml 5s linear both; height: 30px; border-radius: 30px;}
+.progressbar-css{animation: progressCss 5s linear both; height: 30px; border-radius: 30px;}
+.progressbar-javascript{animation: progressJavascript 2.5s linear both; height: 30px; border-radius: 30px;}
+.progressbar-java{animation: progressJava 1.5s linear both; height: 30px; border-radius: 30px;}
+.progressbar-python{animation: progressPython 1.5s linear both; height: 30px; border-radius: 30px;}
 .bbbb{transform: scale(8);}
-
+.bar-text > p{margin-left: 5px; line-height: 2;}
 
 
 @keyframes progressHtml{
-    0%{width: 0; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px)}
-    100%{width: 95%; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px);}
+    0%{width: 0; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px) }
+    100%{width: 100%; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px);}
 }
 @keyframes progressCss{
     0%{width: 0; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px)}
@@ -34,7 +36,8 @@
 .circle-base{max-width: 300px; max-height: 300px;}
 
 svg > text{font-weight: bold; }
-.percent{font-weight: bold; font-size: 2rem; position: absolute; margin-top: 120px; color: #9fdb81;}
+.percent{font-weight: bold; font-size: 2rem; 
+    position: absolute; margin-top: 120px; color: #9fdb81;}
 .circle-content{
 display: flex; flex-direction: column; justify-content: center;
 align-items: center; width: 130px; height: 130px; max-width: 100%; max-height:100%;
@@ -85,6 +88,6 @@ animation: progressLineKotlin 2.8s linear both; transform: rotate(-90deg);}
     svg{display: none;}
     .circle-content{flex-direction: row; width: auto; height: auto; margin: 0; padding: 0 10px 0 10px;}
     
-    .percent{position: relative; margin: 0 ; }
+    .percent{margin: 0; right: 5%;}
     .progress-base{display: block;}
 }
