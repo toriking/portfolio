@@ -1,6 +1,6 @@
 let num = 0;
 setInterval(function(){
-    if(num <= 95){
+    if(num <= 100){
         document.getElementById("html").innerText = num + "%";
         num++;
     }
