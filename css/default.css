@@ -107,7 +107,9 @@ background: #212529;
 }
 *:focus{outline: none;}
 small{width: 100%; color: white; text-align: center;}
-textarea,input:focus{border:2px solid blue;}
+
+input:focus{border:2px solid blue;}
+.yourmessage :focus{border:2px solid blue;}
 /* ipad */
 @media (max-width: 1024px) {
     
