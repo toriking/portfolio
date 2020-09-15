@@ -80,24 +80,25 @@
     
 </a>
 <div class="bable-frame" id="bable-rei">
-    
-    <h2><span>Tomoki</span><span>Portfolio</span>
-        <div class="bable-item" style=""></div>
-        
+    <div class="name-frame">
+    <h2 class=""> Tomoki Portfolio
+        <div class="bable-item"></div>
     </h2>
+</div>
 </div>
 <section class="profile-skill">
     <h1 id="profile">PROFILE</h1>
     <div class="profile-area">
-        <img src="images/" alt="bb">
-        <div class="text-area">
-            <h4>はじめまして。<span class="onepoint">ともき</span>です
-            </h4>
+        <img src="static/images/computer.jpg" alt="bb">
+        <h4>はじめまして。<span class="onepoint">ともき</span>です
+        </h4>
+        
+            
             <p class="profile-text">
              愛知県在住。製造業の仕事をしています。</p>
              (<a class="twitter-link" href="https://twitter.com/toriton2020">
                 <i class="fab fa-twitter"></i>@toriton2020</a>)
-        </div>
+    
     </div>
     <h1 id="skill">SKILL</h1>
     <div class="circle-area">
@@ -110,7 +111,7 @@
             <circle class="broken-line" cx="130" cy="130" r="120"></circle>
             </svg>
             <div class="progress-base">
-                <div class="progressbar-html"><p>HTML</p></div>
+                <div class="progressbar-html bar-text"><p>HTML</p></div>
             </div>
             <div class="percent" id="html"></div>
         </div>
@@ -124,7 +125,7 @@
         <circle class="broken-line" cx="130" cy="130" r="120"></circle>
         </svg>
         <div class="progress-base">
-            <div class="progressbar-css"><p>CSS</p></div>
+            <div class="progressbar-css bar-text"><p>CSS</p></div>
         </div>
         <div class="percent" id="css"></div>
     </div>    
@@ -138,7 +139,7 @@
         <circle class="broken-line" cx="130" cy="130" r="120"></circle>
         </svg>
         <div class="progress-base">
-            <div class="progressbar-javascript"><p>Javascript</p></div>
+            <div class="progressbar-javascript bar-text"><p>Javascript</p></div>
         </div>
         <div class="percent" id="javascript"></div>
     </div>
@@ -152,7 +153,7 @@
         <circle class="broken-line" cx="130" cy="130" r="120"></circle>
         </svg>
         <div class="progress-base">
-            <div class="progressbar-java"><p>Java</p></div>
+            <div class="progressbar-java bar-text"><p>Java</p></div>
         </div>
         <div class="percent" id="java"></div>
     </div>
@@ -166,7 +167,7 @@
         <circle class="broken-line" cx="130" cy="130" r="120"></circle>
         </svg>
         <div class="progress-base">
-            <div class="progressbar-python"><p>Python</p></div>
+            <div class="progressbar-python bar-text"><p>Python</p></div>
         </div>
         <div class="percent" id="python"></div>
     </div>
@@ -180,7 +181,7 @@
 </div>
 </section>
 
-<section>
+<section class="bg-img">
     <h1 id="work">WORK</h1>
     <div class="work-frame">
         <ul>
@@ -194,29 +195,33 @@
     </div>
 </section>
 
-    
+<script type="text/javascript">  
+    let submitted = false;  
+    let currentURL = window.location.href;
+  </script>
+  
     <div class="contact-frame">
+        <iframe name="thanks" id="thanks" style="display: none;" onload="if(submitted) {window.location='thanks.html'}"></iframe>
         <h1 id="contact">CONTACT</h1>
-        <form action="">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdS1a2GBYs-MPzoG-5l_hBXfYkLjT63IhJTkfQqjcybAPFGiA/formResponse" method="POST" target="thanks" onsubmit="submitted=true">
             <div class="yourname">
                 <label for="name"></label>
-                <input id="name" type="text" name="" placeholder="名前">
+                <input id="name" type="text" name="entry.1886485007"  placeholder="名前" required>
             </div>
             <div class="yourmail">
                 <label for="mail"></label>
-                <input id="mail" type="text" name="" placeholder="メールアドレス">
+                <input id="mail" type="text" name="entry.603759366" placeholder="メールアドレス" required>
             </div>
             <div class="yourmessage">
                 <label for="message" ></label>
-                <textarea id="yourname" name="" placeholder="メッセージを入力してください"></textarea>
+                <textarea id="message" name="entry.97574492" placeholder="メッセージを入力してください" required></textarea>
             </div>
+            <button type="submit" name="button" value="送信">送信</button>
         </form>
-        <button type="submit" name="button" value="送信">送信</button>
+        
     </div>
 <footer>
-    <a class="reference" href="https://taikinodesign.com/"><img src="static/images/logo.black.png"></a>
-    <a class="reference" href="">monolith Portfolio</a>
-    <small>2020 ⓒ TomokiDesign</small>
+    <small>ⓒ2020 Tomoki Design.All rights reserved</small>
 </footer>
 <script type="text/javascript" src="bubble-create.js" defer></script>
 <script type="text/javascript" src="js/bubble-burst.js" defer></script>
