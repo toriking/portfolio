@@ -10,16 +10,17 @@ body{
 a{text-decoration: none; color: #fff;}
 li{list-style: none; font-weight: bold;}
 ul{padding: 0; margin: 0;}
+
 .wc{
     z-index: -100; background-image: url(modan4.jpg); background-size: cover; position: absolute;}
 .work-contact{min-height: 100vh; position: relative; 
-   overflow: hidden;
+   overflow: hidden; position: relative; z-index: 10;
     }
 p{margin: 0; line-height: 2.5;}
 .site-nav{
     width: 100%; height: 60px; position: fixed;
     background-color: rgba(69, 180, 253, 0.6); 
-      z-index: 4;  
+      z-index: 9999;  
 }
 .site-nav-list{ 
     display: flex; justify-content: center; height: 60px;
@@ -43,14 +44,16 @@ p{margin: 0; line-height: 2.5;}
     height: 130px; width: 130px; outline: 2px solid black; color: white;}
 .thankyou{min-width: 100%; max-height: 30px; background: red;}
 .nav-item:hover a{color: red;}
-.nav-item:hover ul{ opacity: 1; 
-visibility: visible; }
+.nav-item:hover ul{ opacity: 1; }
 
 
 
 .profile-skill{background: #ebecf0;}
 .profile-area{display: flex; flex-wrap: wrap; position: relative; 
-    align-items: center; justify-content: center; margin: 0 auto; flex-direction: column;}
+    align-items: center; justify-content: center;
+     margin: 0 auto; flex-direction: column; 
+     opacity: 0; visibility: hidden; transition: all 2s ease;
+    transform: translateY(40px);}
 .profile-area > img{
     position: absolute; left: 10%; width: 100px; height: 100px; border-radius: 50%;}
 
@@ -93,7 +96,9 @@ h2 > .bable-item{ position: absolute;
 }
 .work-frame > ul > li{width: 100px; height: 100px;}
 
-.contact-frame{ margin: 10px; text-align: center; display: flex; flex-direction: column; justify-content: center;}
+.contact-frame{ margin: 10px; text-align: center; 
+    display: flex; flex-direction: column;  
+    justify-content: center;}
 input,textarea{margin: 10px; border: 2px solid ; height: 40px;
      border-radius: 10px; font-family: inherit; font-weight: bold;
     
@@ -110,6 +115,7 @@ small{width: 100%; color: white; text-align: center;}
 
 input:focus{border:2px solid blue;}
 .yourmessage :focus{border:2px solid blue;}
+.show{visibility: visible; opacity: 1; transform: translateY(0);}
 /* ipad */
 @media (max-width: 1024px) {
     
