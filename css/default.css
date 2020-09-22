@@ -65,6 +65,7 @@ padding: 60px 0 0 0; font-size: 3rem; margin: 0;
 
 
      .top-scroll{border-radius: 50%; text-align: center;
+         opacity: 0;
     background-color: rgba(69, 180, 253, 1); 
 
    text-shadow: 1px 1px 2px #000;
@@ -115,7 +116,7 @@ small{width: 100%; color: white; text-align: center;}
 
 input:focus{border:2px solid blue;}
 .yourmessage :focus{border:2px solid blue;}
-.show{visibility: visible; opacity: 1; transform: translateY(0);}
+/* .show{visibility: visible; opacity: 1; transform: translate(0);} */
 /* ipad */
 @media (max-width: 1024px) {
     
