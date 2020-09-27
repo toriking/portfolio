@@ -1,18 +1,13 @@
 .progress-base{height: 30px; max-width: 200px; width: 100%;
      background: lightgray; display: none;
       margin-right: 90px; border-radius: 30px;}
-.progressbar-html{animation: progressHtml 5s linear both; height: 30px; border-radius: 30px;}
-.progressbar-css{animation: progressCss 5s 0.4s linear both; height: 30px; border-radius: 30px;}
-.progressbar-javascript{animation: progressJavascript 2.5s 0.8s linear both; height: 30px; border-radius: 30px;}
-.progressbar-java{animation: progressJava 1.5s 1s linear both; height: 30px; border-radius: 30px;}
-.progressbar-python{animation: progressPython 1.5s 1.5s linear both; height: 30px; border-radius: 30px;}
+.progressbar-html{animation: progressHtml 4.8s linear both; height: 30px; border-radius: 30px;}
+.progressbar-css{animation: progressCss 4.5s 0.4s linear both; height: 30px; border-radius: 30px;}
+.progressbar-javascript{animation: progressJavascript 1.8s 0.8s linear both; height: 30px; border-radius: 30px;}
+.progressbar-java{animation: progressJava 1.0s 1s linear both; height: 30px; border-radius: 30px;}
+.progressbar-python{animation: progressPython 1.0s 1.0s linear both; height: 30px; border-radius: 30px;}
 .bbbb{transform: scale(8);}
 .bar-text > p{margin-left: 5px; line-height: 2;}
-.circle-content{}
-/* .circle-content:nth-child(2){transform: translateX(-40px);}
-.circle-content:nth-child(3){transform: translateX(-40px);}
-.circle-content:nth-child(4){transform: translateX(-40px);} */
-
 @keyframes progressHtml{
     0%{width: 0; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px) }
     100%{width: 100%; background: repeating-linear-gradient(-45deg,#9fdb81,#9fdb81 5px,#82e054 5px,#82e054 10px);}
@@ -52,17 +47,15 @@ stroke-dasharray: 4 33.68;
 
 }
 .progress-html{fill: transparent; stroke-width: 20; stroke: #FF6D00; 
-animation: progressLineHtml 4.5s linear both; transform: rotate(-90deg);}
+animation: progressLineHtml 4.8s linear both; transform: rotate(-90deg);}
 .progress-css{fill: transparent; stroke-width: 20; stroke: #039BE5;
-animation: progressLineCss 4s linear both; transform: rotate(-90deg);}
+animation: progressLineCss 4.5s linear both; transform: rotate(-90deg);}
 .progress-javascript{fill: transparent; stroke-width: 20; stroke: #F2BF22; 
 animation: progressLineJavascript 2.5s linear both; transform: rotate(-90deg);}
 .progress-java{fill: transparent; stroke-width: 20; stroke: #FF0000;
-animation: progressLineJava 3s linear both; transform: rotate(-90deg);}
+animation: progressLineJava 1.5s linear both; transform: rotate(-90deg);}
 .progress-python{fill: transparent; stroke-width: 20; stroke: #004d40;
-animation: progressLinePython 2.8s linear both; transform: rotate(-90deg);}
-.progress-kotlin{fill: transparent; stroke-width: 20; 
-animation: progressLineKotlin 2.8s linear both; transform: rotate(-90deg);}
+animation: progressLinePython 1.5s linear both; transform: rotate(-90deg);}
 @keyframes progressLineHtml{
 0%{stroke-dasharray: 0 753.6;}
 100%{stroke-dasharray: 720 753.6;}
@@ -81,10 +74,6 @@ animation: progressLineKotlin 2.8s linear both; transform: rotate(-90deg);}
 @keyframes progressLinePython{
 0%{stroke-dasharray: 0 753.6;}
 100%{stroke-dasharray: 230 753.6;}
-}
-@keyframes progressLineKotlin{
-0%{stroke-dasharray: 0 753.6;}
-100%{stroke-dasharray: 125 753.6;}
 }
 @media (max-width:414px){
     .circle-area{flex-direction: column; margin: 0; opacity: 1; visibility: visible;}
