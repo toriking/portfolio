@@ -1,4 +1,3 @@
-const startTime = performance.now();
 
 const tabSwitch = document.querySelectorAll('.js-tab-switch');
 const tabTargets = document.querySelectorAll('.js-tab-target');
@@ -65,5 +64,3 @@ for (let i = 0; i < tabSwitch.length; i++) {
 //     }
 // });
 
-const endTime = performance.now();
-console.log(endTime - startTime);
