@@ -80,6 +80,9 @@
     
 </a>
 <div class="bable-frame" id="bable-rei">
+    <div class="naname">
+        
+    </div>
     <div class="name-frame">
     <h2 class=""> Tomoki Portfolio
         <div class="bable-item"></div>
@@ -187,27 +190,20 @@
     <h1 id="work">WORK</h1>
     <div class="work__area">
         <ul class="tab">
-            <li class="js-tab-switch" id="all">ALL</li>
-            <li class="js-tab-switch" data-id="homepage">HOMEPAGE</li>
-            <li class="js-tab-switch" data-id="app">APP</li>
-            <li class="js-tab-switch" data-id="etc">etc</li>
+            <li class="js-tab-switch active-light" id="all">ALL</li>
+            <li class="js-tab-switch" id="homepage" data-id=".homepage">HOMEPAGE</li>
+            <li class="js-tab-switch" id="app" data-id=".app">APP</li>
+            <li class="js-tab-switch" data-id=".etc">etc</li>
         </ul>
         <div class="work__frame" >
-            <div class="js-tab-target is-active" id="homepage">
-            <div class="work__item"><a href="fictitious-site"></a></div>
-            <div class="work__item"><a href="fictitious-site"></a></div>
-            <div class="work__item"><a href="fictitious-site"></a></div>
-            <div class="work__item"><a href="fictitious-site"></a></div>
-    
-        </div>
-            <div class="js-tab-target is-active" id="etc">
-            <div class="work__item"><a class="blog" href=""></a></div>
-            <div class="work__item"><a class="repeair-site" href=""></a></div>
-            </div>
-            <div class="js-tab-target is-active" id="app">
-            <div class="work__item"><a class="app" href=""></a></div>
-            <div class="work__item"><a class="app" href=""></a></div>
-            </div>
+            <div class="work__item homepage is-active"><a href="fictitious-site"></a></div>
+            <div class="work__item homepage is-active"><a href="fictitious-site"></a></div>
+            <div class="work__item homepage is-active"><a href="fictitious-site"></a></div>
+            <div class="work__item homepage is-active"><a href="fictitious-site"></a></div>
+            <div class="work__item etc is-active"><a class="blog" href=""></a></div>
+            <div class="work__item etc is-active"><a class="repeair-site" href=""></a></div>
+            <div class="work__item app is-active"><a class="" href=""></a></div>
+            <div class="work__item app is-active"><a class="" href=""></a></div>
         </div>
 
     </div>
@@ -218,38 +214,40 @@
     let currentURL = window.location.href;
   </script>
   
-    <div class="contact-frame">
-        <iframe name="thanks" id="thanks" style="display: none;" onload="if(submitted) {window.location='thanks.html'}"></iframe>
-        <h1 id="contact">CONTACT</h1>
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdS1a2GBYs-MPzoG-5l_hBXfYkLjT63IhJTkfQqjcybAPFGiA/formResponse" method="POST" target="thanks" onsubmit="submitted=true">
-            <div class="yourname">
-                <label for="name"></label>
-                <input id="name" type="text" name="entry.1886485007"  placeholder="名前" required>
-            </div>
-            <div class="yourmail">
-                <label for="mail"></label>
-                <input id="mail" type="text" name="entry.603759366" placeholder="メールアドレス" required>
-            </div>
-            <div class="yourmessage">
-                <label for="message" ></label>
-                <textarea id="message" name="entry.97574492" placeholder="メッセージを入力してください" required></textarea>
-            </div>
-            <button type="submit" name="button" value="送信">送信</button>
-        </form>
-        
-    </div>
-    <footer>
-        <small>ⓒ2020 Tomoki Design.All rights reserved</small>
-    </footer>
+  
+  <div class="contact-frame">
+    <iframe name="thanks" id="thanks" style="display: none;" onload="if(submitted) {window.location='thanks.html'}"></iframe>
+    <h1 >CONTACT</h1>
+    <form id="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdS1a2GBYs-MPzoG-5l_hBXfYkLjT63IhJTkfQqjcybAPFGiA/formResponse" method="POST" target="thanks" onsubmit="submitted=true">
+        <div class="yourname">
+            <label for="name"></label>
+            <input id="name" type="text" name="entry.1886485007"  placeholder="名前" required>
+        </div>
+        <div class="yourmail">
+            <label for="mail"></label>
+            <input id="mail" type="text" name="entry.603759366" placeholder="メールアドレス" required>
+        </div>
+        <div class="yourmessage">
+            <label for="message" ></label>
+            <textarea id="message" name="entry.97574492" placeholder="メッセージを入力" required></textarea>
+        </div>
+        <button type="submit" name="button" value="送信">送信</button>
+    </form>
+    
+</div>
 </div>
 
-
+<footer>
+    <small>ⓒ2020 Tomoki Design.All rights reserved</small>
+</footer>
 <script type="text/javascript" src="js/bubble-create.js" defer></script>
 <script type="text/javascript" src="js/bubble-burst.js" defer></script>
 <script type="text/javascript" src="js/scroll.js" defer></script>
 <script type="text/javascript" src="js/count.js" defer></script>
 <script type="text/javascript" src="js/fadein.js" defer></script>
-<script type="text/javascript" src="js/TabSwitch.js" defer></script>
+<!-- <script type="text/javascript" src="js/TabSwitch.js" defer></script> -->
+<script type="text/javascript" src="js/TabSwitch2.js" defer></script>
+
 <!-- <script type="text/javascript" src="js/fadein2.js" defer></script> -->
 </body>
 </html>
