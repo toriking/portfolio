@@ -11,8 +11,8 @@ a{text-decoration: none; color: #fff;}
 li{list-style: none; font-weight: bold;}
 ul{padding: 0; margin: 0;}
 
-
-p{margin: 0; line-height: 2.5;}
+h1,h6{margin: 0;}
+p{margin: 0; line-height: 1.5;}
 .site-nav{
     width: 100%; height: 60px; position: fixed;
     z-index: 9999;
@@ -61,7 +61,7 @@ p{margin: 0; line-height: 2.5;}
 
 h4{font-size: 1.5rem; text-align: center; margin: 0;}
 .twitter-link{color: lightskyblue;}
-h1{text-align: center; font-family: oswald, sans-serif; font-weight: bold; font-style: normal; color: #444;
+.text-title{text-align: center; font-family: oswald, sans-serif; font-weight: bold; font-style: normal; color: #444;
 padding: 60px 0 0 0; font-size: 3rem; margin: 0;
 }
 .service{
@@ -69,11 +69,25 @@ padding: 60px 0 0 0; font-size: 3rem; margin: 0;
 }
 .service__area{ display: flex; flex-wrap: wrap; justify-content: center;
 }
-.service__item{
-    width: 300px; height: 300px; margin: 10px; text-align: center; outline: 2px solid black;
+.service__item{ 
+    width: 300px; height: 300px; margin: 10px; padding: 10px;
+     text-align: center; outline: 2px solid black;
+     font-size: 1.5rem;
 }
-.service__image{width: 100%; height: 30%; padding: 10px;}
+.service__item h1::after{
+    content: ""; display: block; width: 100px;
+    height: 3px; background: #03A9F4; position: relative; 
+    left: 33%; margin-bottom: 20px;
+    
+}
+.service__item p{text-align: start; padding: 0 10px; font-size: 1.1rem; }
+.service__image{ height: 20%; 
+}
 
+.service__text{ font-size: 1.5rem;
+  font-family: oswald, sans-serif;font-weight: bold;
+   font-style: normal; color: #444; 
+}
 
      .top-scroll{border-radius: 50%; text-align: center;
          opacity: 0;
@@ -140,7 +154,7 @@ h2 > .bable-item{ position: absolute;
 .contact-frame{ margin: 10px; text-align: center; min-height: 100vh;
     display: flex; flex-direction: column;
     justify-content: center;}
-form{}
+    
 input,textarea{margin: 20px; border: 2px solid ; height: 40px;
      border-radius: 10px; font-family: inherit; font-weight: bold;
     
