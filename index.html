@@ -33,7 +33,7 @@
 <body> 
 <nav class="site-nav">
     <div class="site-nav__frame">
-        <a href="" class="logo"><img src="" >aaa</a>
+        <a href="" class="logo"><img src="" alt="image"></a>
         <ul class="site-nav-list">
             <li class="nav-item">
                 <a href="#profile">
@@ -42,22 +42,29 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-skill" href="#skill">
+                <a href="#skill">
                     <i class="fas fa-lightbulb"></i>
                     <span class="nav-text">SKILL</span>
                 </a>
             </li>
-            <li class="nav-item etc">
+            <input type="checkbox" id="drawer-check" class="drawer">
+            <label for="drawer-check" class="drawer-open">
+            <li class="nav-item etc" for="drawer-check"> 
                 <i class="fas fa-bars"></i>
-                <ul>
-                    <li class="thankyou">見ていただきありがとうございます。</li>
-                    <li >bb</li> 
-                    <li >cc</li>
-                    <li >dd</li> 
-                    <li >ee</li>
-                    <li class="thankyou">ff</li> 
-                </ul>    
+                
             </li>
+        </label>
+        <div class="drawer-inner" for="drawer-check">
+        <ul class="drawer-content" for="">
+            <label for="drawer-check" class="drawer-close"></label>
+
+            <li>どこをクリックしても閉じます</li>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
+
             <li class="nav-item">
                 <a href="#work">
                     <i class="fas fa-tasks"></i>
@@ -74,14 +81,11 @@
     </div>            
 </nav>
 <a class="top-scroll" href="#bable-rei">
-
-    
-        <i class="fas fa-arrow-up" style="width: 100%;"></i>Top
-    
+    <i class="fas fa-arrow-up" style="width: 100%;"></i>
+   <span>Top</span> 
 </a>
 <div class="bable-frame" id="bable-rei">
-    <div class="naname">
-        
+    <div class="naname">        
     </div>
     <div class="name-frame">
     <h2 class=""> Tomoki Portfolio
@@ -92,37 +96,36 @@
 <section class="profile-skill">
     <h1 class="text-title" id="profile">PROFILE</h1>
     <div class="profile-area fade">
-        <img src="static/images/computer.jpg" alt="bb">
+        <img src="static/images/computer.jpg" alt="image">
         <h4>はじめまして。<span class="onepoint">ともき</span>です
         </h4>
-        
-            
-            <p class="profile-text">愛知県在住。製造業の仕事をしています。</p>
-            <a class="twitter-link" href="https://twitter.com/toriton2020">
-                <i class="fab fa-twitter"></i>@toriton2020
-            </a>
-    
+        <p class="profile-text">愛知県在住。製造業の仕事をしています。</p>
+        <a class="twitter-link" href="https://twitter.com/toriton2020">
+            <i class="fab fa-twitter"></i>@toriton2020
+        </a>
     </div>
-    <section class="service">
-        <ul class="service__area">
-            <li class="service__item"><img class="service__image" src="static/images/laptop.svg" alt="image">
-                <h1>HP・LP制作</h1>
-                <p>ご要望をヒアリングし、ホームページやランディングページを作成いたします。</p>
-                <p>アップロード・レスポンシブ対応・メンテナンスまで行います</p>
-            </li>
-            <li class="service__item"><img class="service__image" src="static/images/code.svg" alt="image">
-                <h1>コーディング</h1>
-                <p>ご用意していただいたデザインカンプをもとにデザインをもとにコーディングを行います。</p>
-                <h6>HTML・CSS・Javascript jQuery・Bootstrap</h6>
-            </li>
-            <li class="service__item"><img class="service__image" src="static/images/edit.svg" alt="image">
-                <h1>デザイン制作</h1>
-                <p>バナーなどのデザインを行います。</p>
-            </li>
-        </ul>
-    </section>
-    <h1 class="text-title" id="skill">SKILL</h1>
+<section class="service">
+    <h1 class="text-title">Service</h1>
+    <ul class="service__area">
+        <li class="service__item"><img class="service__image" src="static/images/laptop.svg" alt="image">
+            <h1>HP・LP制作</h1>
+            <p>ご要望をヒアリングし、ホームページやランディングページを作成いたします。</p>
+            <p>アップロード・レスポンシブ対応・メンテナンスまで行います</p>
+        </li>
+        <li class="service__item"><img class="service__image" src="static/images/code.svg" alt="image">
+            <h1>コーディング</h1>
+            <p>ご用意していただいたデザインカンプをもとにデザインをもとにコーディングを行います。</p>
+            <h6>HTML・CSS・Javascript jQuery・Bootstrap</h6>
+        </li>
+        <li class="service__item"><img class="service__image" src="static/images/edit.svg" alt="image">
+            <h1>デザイン制作</h1>
+            <p>バナーなどのデザインを行います。</p>
+        </li>
+    </ul>
+</section>
     <div class="circle-area fade">
+        <h1 class="text-title" style="width: 100%;" id="skill">SKILL</h1>
+
         <div class="circle-content">
             <img class="skill-img" src="static/images/html5.svg">
             <svg width="260" height="260" style="position: absolute;">
