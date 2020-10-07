@@ -27,31 +27,41 @@ p{margin: 0; line-height: 1.5;}
     position: relative; margin-left: auto; max-width: 100%;
      
  }
- .logo{}
- .nav-item{
-      text-align: center; color: white; 
-     font-size: 1.2rem; margin: 0 auto; padding-left: 2rem;}
-.nav-item.etc{display: none;}
-.nav-item.aaa{display: none; 
-    text-align: center;
-     }
-.nav-item.etc > ul{
-    position: absolute; transition: all .5s ease;
-    visibility: hidden; opacity: 0; z-index: 9999;
-     display: flex; flex-wrap: wrap; 
-    justify-content: center;
-    left: 0; width: 100%;
-}
-.nav-item.etc > ul > li{margin: 10px ;
-    height: 130px; width: 130px; outline: 2px solid black; color: white;}
-.thankyou{min-width: 100%; max-height: 30px; background: red;}
-.nav-item:hover a{color: red;}
-.nav-item:hover ul{ opacity: 1; }
 
+.nav-item{
+    text-align: center; color: white; 
+    font-size: 1.2rem; margin: 0 auto; padding-left: 2rem;
+    }
+.nav-item.etc{ }
+.drawer{display: none;}
+.drawer-close{width: 600px; height: 100vh;
+     transform: translate(-50%); left: 50%; bottom: -60px;
+      position: absolute; 
+      z-index: 9999; opacity: 0;}
+.drawer-inner{position: relative;
+     visibility: hidden;
+ }
+.drawer-content{position: absolute; 
+     display: flex; flex-direction: column; 
+     left: 50%; transform: translateX(-50%);
+    width: 400px; bottom: 30px;
+      
+     z-index: -1;
+    z-index: 99;  height: 500px;
+       
+background: green;
+     }
+.drawer-content li{text-align: center;}
+#drawer-check:checked ~ .drawer-inner{ 
+     visibility: visible; 
+    transform: translateY(0);
+}
+#drawer-check:checked  ~.drawer-close{opacity: 1;}
 
 
 .profile-skill{background: #ebecf0;}
-.profile-area{display: flex; flex-wrap: wrap; position: relative; 
+.profile-area{display: flex; flex-wrap: wrap;
+     position: relative; 
     align-items: center; justify-content: center;
      margin: 0 auto; flex-direction: column; 
      opacity: 0; visibility: hidden; transition: all 2s ease;
@@ -61,8 +71,8 @@ p{margin: 0; line-height: 1.5;}
 
 h4{font-size: 1.5rem; text-align: center; margin: 0;}
 .twitter-link{color: lightskyblue;}
-.text-title{text-align: center; font-family: oswald, sans-serif; font-weight: bold; font-style: normal; color: #444;
-padding: 60px 0 0 0; font-size: 3rem; margin: 0;
+.text-title{text-align: center; font-family: adobe-caslon-pro, serif; font-weight: bold; font-style: normal; color: #444;
+ font-size: 3rem; padding: 60px 0 0 0; line-height: 1;
 }
 .service{
     max-width: 1200px; margin: 0 auto;
@@ -71,8 +81,8 @@ padding: 60px 0 0 0; font-size: 3rem; margin: 0;
 }
 .service__item{ 
     width: 300px; height: 300px; margin: 10px; padding: 10px;
-     text-align: center; outline: 2px solid black;
-     font-size: 1.5rem;
+     text-align: center; outline: 1px solid black;
+     font-size: 1.5rem; background: white;
 }
 .service__item h1::after{
     content: ""; display: block; width: 100px;
@@ -89,7 +99,7 @@ padding: 60px 0 0 0; font-size: 3rem; margin: 0;
    font-style: normal; color: #444; 
 }
 
-     .top-scroll{border-radius: 50%; text-align: center;
+     .top-scroll{border-radius: 50%; text-align: center; 
          opacity: 0;
     background-color: rgba(69, 180, 253, 1); 
 
@@ -99,9 +109,9 @@ padding: 60px 0 0 0; font-size: 3rem; margin: 0;
 
     -webkit-box-shadow: 2px 2px 3px 1px #666;
     font-weight: bold; font-size:1.0rem; z-index: 999; 
-    bottom: 20px; position: fixed; right: 0; width: 50px; 
+    bottom: 44px; position: fixed; right: 0; width: 50px; 
     height: 50px; margin: 5px;}
-
+.top-scroll span{ font-size: 1.2rem; position: relative; top: -5px;}
 .top-scroll:hover a{color: red;}
 
 
@@ -113,7 +123,7 @@ h2{
     left: 50%; align-items: center;
     transform: translate(-50%, -50%); 
     -webkit-transform: translate(-50%,-50%);
-    
+    font-family: adobe-caslon-pro, serif; color: white;
 }
 h2 > .bable-item{ position: absolute;
 
@@ -125,8 +135,10 @@ h2 > .bable-item{ position: absolute;
    .work-contact{ position: relative; 
       overflow: hidden; z-index: 10;
        }
-.work__area{ position: relative; top: 10px; max-width: 1200px; margin: 0 auto;}
-.tab{width: 100%; display: flex;flex-wrap: wrap; justify-content: center;
+.work__area{ position: relative; top: 10px; 
+    max-width: 1200px; margin: 0 auto;}
+.tab{width: 100%; display: flex;flex-wrap: wrap; 
+    justify-content: center;
 
 }
 .js-tab-switch{margin: auto; cursor: pointer; background: lightslategray; 
@@ -135,11 +147,9 @@ h2 > .bable-item{ position: absolute;
 .work__frame{ display: flex;
      flex-wrap: wrap; justify-content: center; align-items: center;
 }
-
 .work__item {display: none;
      width: 300px; height: 200px; margin: 10px; background: green;}
 /* .is-active{opacity: 1; width: auto; height: auto; transition: 1s ease-in;} */
-
 .is-active{  
     display: block; animation: ccc 1s linear;
     }
@@ -151,7 +161,7 @@ h2 > .bable-item{ position: absolute;
             opacity: 1; transform: translateY(0);
         }
     }
-.contact-frame{ margin: 10px; text-align: center; min-height: 100vh;
+.contact-frame{ margin: 10px; text-align: center;
     display: flex; flex-direction: column;
     justify-content: center;}
     
@@ -162,7 +172,8 @@ input,textarea{margin: 20px; border: 2px solid ; height: 40px;
 textarea{resize: none; height: 240px;  width: 100%; max-width: 800px; 
     margin: 20px auto ; padding: 10px; text-align: start; font-size: 1.5rem;}
 ::placeholder{text-align: center;}
- button{width: 100px; margin: 0 auto 10px auto; font-size: 2rem;}
+ button{width: 100px; margin-bottom: 20px;
+     font-size: 2rem; line-height: 1.5;}
 footer{display: flex; flex-wrap: wrap; justify-content: center;
 background: #212529;
 }
@@ -197,19 +208,20 @@ input:focus{border:2px solid blue;}
     .site-nav{height: 55px; bottom: 0;}
     /* .bable-frame > h2 > .bable-item{transform: scale(4.5);  top: 40%;}
     .bable-item > h2{font-size: 0.2rem; text-align: center;} */
-    .site-nav__frame{}
+    
     .site-nav-list{ width: 100%;}    
     .nav-item{padding: 0;}
-    .nav-text{font-size: 0.8rem;}
-
+    .nav-item a i{margin-top: 10px;}
+    .nav-text{font-size: 0.8rem; position: relative; top: -10px;}
+     
     .profile-area{text-align: center; display: block;}
     .top-scroll{bottom: 54px;}
-    i{width: 100%;}
+    i{width: 100%; }
     .circle-content > img{width: 48px; height: 48px;}
     .logo{display: none;}
-    .nav-item.etc{display: block;}
+    
     .site-nav-list{padding: 0;}
-    .etc >ul{bottom: 50px;}
+    
     button{margin: 0 auto 70px auto; }
     footer{display: none;}
     h1{margin: 0;}
