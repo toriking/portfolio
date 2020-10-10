@@ -28,53 +28,52 @@
     <!--  -->
     <!--  -->
     <!-- IE対応 -->
-   <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
 </head>
 <body> 
-<nav class="site-nav">
-    <div class="site-nav__frame">
-        <a href="" class="logo"><img src="" alt="image"></a>
-        <ul class="site-nav-list">
-            <li class="nav-item">
+<nav class="gnav">
+    <div class="gnav__frame">
+        <a href="" class="logo"><img src="static/images/logo-sample.jpg" alt="image"></a>
+        <ul class="gnav__list">
+            <li class="gnav__item">
                 <a href="#profile">
                     <i class="fas fa-user"></i>
-                    <span class="nav-text">PROFILE</span>
+                    <span class="gnav__text">PROFILE</span>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="gnav__item">
                 <a href="#skill">
                     <i class="fas fa-lightbulb"></i>
-                    <span class="nav-text">SKILL</span>
+                    <span class="gnav__text">SKILL</span>
                 </a>
             </li>
             <input type="checkbox" id="drawer-check" class="drawer">
-            <label for="drawer-check" class="drawer-open">
-            <li class="nav-item etc" for="drawer-check"> 
+            <label for="drawer-check">
+            <li class="gnav__item etc"> 
                 <i class="fas fa-bars"></i>
-                
             </li>
         </label>
         <div class="drawer-inner" for="drawer-check">
         <ul class="drawer-content" for="">
             <label for="drawer-check" class="drawer-close"></label>
-
+            <li>サイト閲覧いただきありがとうございます</li>
             <li>どこをクリックしても閉じます</li>
-                    <li>
-                        
+                    <li style="position: relative; z-index: 999;">
+                        <a href="test.html" >テストだよ</a>
                     </li>
                 </ul>
             </div>
 
-            <li class="nav-item">
+            <li class="gnav__item">
                 <a href="#work">
                     <i class="fas fa-tasks"></i>
-                    <span class="nav-text">WORK</span>
+                    <span class="gnav__text">WORK</span>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="gnav__item">
                 <a href="#contact">
                     <i class="fas fa-envelope"></i>
-                    <span class="nav-text">CONTACT</span>
+                    <span class="gnav__text">CONTACT</span>
                 </a>
             </li>
         </ul>
@@ -82,7 +81,7 @@
 </nav>
 <a class="top-scroll" href="#bable-rei">
     <i class="fas fa-arrow-up" style="width: 100%;"></i>
-   <span>Top</span> 
+    <span>Top</span> 
 </a>
 <div class="bable-frame" id="bable-rei">
     <div class="naname">        
@@ -139,7 +138,7 @@
             </div>
             <div class="percent" id="html"></div>
         </div>
-   
+
     <div class="circle-content">
         <img src="static/images/css3.svg">
         <svg width="260" height="260" style="position: absolute;">
@@ -199,15 +198,12 @@
 </div>
 <h4>フレームワークなど</h4>
 <div class="" style="display: flex; justify-content: center; width: 100%;">
-   
     
     
 </div>
 </section>
 
 <div class="work-contact wc">
-    <div class=""></div>
-    <!-- <div class="wc"></div> -->
     <h1 class="text-title" id="work">WORK</h1>
     <div class="work__area">
         <ul class="tab">
@@ -217,7 +213,7 @@
             <li class="js-tab-switch" data-id=".etc">etc</li>
         </ul>
         <div class="work__frame" >
-            <div class="work__item homepage is-active"><a href="fictitious-site"><img src="" alt="image"></a></div>
+            <div class="work__item homepage is-active"><a href="tourism/tourism.html"><img src="tourism/images/1712531_m.jpg" alt="image"></a></div>
             <div class="work__item homepage is-active"><a href="fictitious-site"><img src="" alt="image"></a></div>
             <div class="work__item homepage is-active"><a href="fictitious-site"><img src="" alt="image"></a></div>
             <div class="work__item homepage is-active"><a href="fictitious-site"><img src="" alt="image"></a></div>
@@ -266,9 +262,6 @@
 <script type="text/javascript" src="js/scroll.js" defer></script>
 <script type="text/javascript" src="js/count.js" defer></script>
 <script type="text/javascript" src="js/fadein.js" defer></script>
-<!-- <script type="text/javascript" src="js/TabSwitch.js" defer></script> -->
-<script type="text/javascript" src="js/TabSwitch2.js" defer></script>
-
-<!-- <script type="text/javascript" src="js/fadein2.js" defer></script> -->
+<script type="text/javascript" src="js/TabSwitch.js" defer></script>
 </body>
 </html>
