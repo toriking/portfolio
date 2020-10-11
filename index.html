@@ -17,7 +17,7 @@
     <!-- fontawesome　CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <!-- ファビコン -->
-    <link rel="icon" href="static/images/rei.ico">
+    <link rel="icon" href="images/rei.ico">
     <!-- デフォルト -->
     <link rel="stylesheet" href="css/default.css">
     <!-- バブル -->
@@ -33,7 +33,7 @@
 <body> 
 <nav class="gnav">
     <div class="gnav__frame">
-        <a href="" class="logo"><img src="static/images/logo-sample.jpg" alt="image"></a>
+        <a href="" class="logo"><img src="images/logo-sample.png" alt="image"></a>
         <ul class="gnav__list">
             <li class="gnav__item">
                 <a href="#profile">
@@ -95,7 +95,7 @@
 <section class="profile-skill">
     <h1 class="text-title" id="profile">PROFILE</h1>
     <div class="profile-area fade">
-        <img src="static/images/computer.jpg" alt="image">
+        <img src="images/computer.jpg" alt="image">
         <h4>はじめまして。<span class="onepoint">ともき</span>です
         </h4>
         <p class="profile-text">愛知県在住。製造業の仕事をしています。</p>
@@ -106,17 +106,20 @@
 <section class="service">
     <h1 class="text-title">Service</h1>
     <ul class="service__area">
-        <li class="service__item"><img class="service__image" src="static/images/laptop.svg" alt="image">
+        <li class="service__item">
+            <img class="service__image" src="images/laptop.svg" alt="image">
             <h1>HP・LP制作</h1>
             <p>ご要望をヒアリングし、ホームページやランディングページを作成いたします。</p>
             <p>アップロード・レスポンシブ対応・メンテナンスまで行います</p>
         </li>
-        <li class="service__item"><img class="service__image" src="static/images/code.svg" alt="image">
+        <li class="service__item">
+            <img class="service__image" src="images/code.svg" alt="image">
             <h1>コーディング</h1>
             <p>ご用意していただいたデザインカンプをもとにデザインをもとにコーディングを行います。</p>
             <h6>HTML・CSS・Javascript jQuery・Bootstrap</h6>
         </li>
-        <li class="service__item"><img class="service__image" src="static/images/edit.svg" alt="image">
+        <li class="service__item">
+            <img class="service__image" src="images/edit.svg" alt="image">
             <h1>デザイン制作</h1>
             <p>バナーなどのデザインを行います。</p>
         </li>
@@ -126,7 +129,7 @@
         <h1 class="text-title" style="width: 100%;" id="skill">SKILL</h1>
 
         <div class="circle-content">
-            <img class="skill-img" src="static/images/html5.svg">
+            <img class="skill-img" src="images/html5.svg">
             <svg width="260" height="260" style="position: absolute;">
             <text x="50%" y="30%" text-anchor="middle" fill="#FF6D00" font-size="2rem">HTML</text>
             <circle class="aaa" cx="130" cy="130" r="120"></circle>
@@ -140,7 +143,7 @@
         </div>
 
     <div class="circle-content">
-        <img src="static/images/css3.svg">
+        <img src="images/css3.svg">
         <svg width="260" height="260" style="position: absolute;">
         <text x="50%" y="30%" text-anchor="middle" fill="#039BE5" font-size="2rem">CSS</text>
         <circle class="aaa" cx="130" cy="130" r="120"></circle>
@@ -154,7 +157,7 @@
     </div>    
 
     <div class="circle-content">
-        <img class="skill-img" src="static/images/javascript3.svg">  
+        <img class="skill-img" src="images/javascript3.svg">  
         <svg width="260" height="260" style="position: absolute;">
         <text x="50%" y="30%" text-anchor="middle" fill="#F2BF22" font-size="2rem">Javascript</text>
         <circle class="aaa" cx="130" cy="130" r="120"></circle>
@@ -168,7 +171,7 @@
     </div>
 
     <div class="circle-content">
-        <img src="static/images/java.svg">   
+        <img src="images/java.svg">   
         <svg width="260" height="260" style="position: absolute;">
         <text x="50%" y="30%" text-anchor="middle" fill="#FF0000" font-size="2rem">Java</text>
         <circle class="aaa" cx="130" cy="130" r="120"></circle>
@@ -182,7 +185,7 @@
     </div>
 
     <div class="circle-content">
-        <img class="" src="static/images/python.svg">    
+        <img class="" src="images/python.svg">    
         <svg width="260" height="260" style="position: absolute;">
         <text x="50%" y="30%" text-anchor="middle" fill="#004d40" font-size="2rem">Python</text>
         <circle class="aaa" cx="130" cy="130" r="120"></circle>
@@ -213,14 +216,53 @@
             <li class="js-tab-switch" data-id=".etc">etc</li>
         </ul>
         <div class="work__frame" >
-            <div class="work__item homepage is-active"><a href="tourism/tourism.html"><img src="tourism/images/1712531_m.jpg" alt="image"></a></div>
-            <div class="work__item homepage is-active"><a href="fictitious-site"><img src="" alt="image"></a></div>
-            <div class="work__item homepage is-active"><a href="fictitious-site"><img src="" alt="image"></a></div>
-            <div class="work__item homepage is-active"><a href="fictitious-site"><img src="" alt="image"></a></div>
-            <div class="work__item etc is-active"><a class="blog" href="blog"><img src="" alt="image"></a></div>
-            <div class="work__item etc is-active"><a class="repeair-site" href=""><img src="" alt="image"></a></div>
-            <div class="work__item app is-active"><a class="" href="app"><img src="" alt="image"></a></div>
-            <div class="work__item app is-active"><a class="" href="app"><img src="" alt="image"></a></div>
+            <div class="work__item homepage is-active">
+                <a href="tourism-nagoya/tourism.html" target="_blank" rel="noopener noreferrer">
+                    <img src="images/coming-soon.jpg" alt="image">
+                    <p class="work__item__text">名古屋観光サイト</p>
+                </a>
+            </div>
+            <div class="work__item homepage is-active">
+                <a href="fictitious-site" target="_blank" rel="noopener noreferrer">
+                    <img src="images/coming-soon.jpg" alt="image"></a>
+                    <p class="work__item__text"></p>
+                </div>
+            <div class="work__item homepage is-active">
+                <a href="fictitious-site" target="_blank" rel="noopener noreferrer">
+                    <img src="images/coming-soon.jpg" alt="image">
+                    <p class="work__item__text"></p>
+                </a>
+            </div>
+            <div class="work__item homepage is-active">
+                <a href="fictitious-site" target="_blank" rel="noopener noreferrer">
+                    <img src="images/coming-soon.jpg" alt="image">
+                    <p class="work__item__text"></p>
+                </a>
+            </div>
+            <div class="work__item etc is-active">
+                <a class="blog" href="blog" target="_blank" rel="noopener noreferrer">
+                    <img src="images/coming-soon.jpg" alt="image">
+                    <p class="work__item__text"></p>
+                </a>
+            </div>
+            <div class="work__item etc is-active">
+                <a class="repeair-site" href="" target="_blank" rel="noopener noreferrer">
+                    <img src="images/coming-soon.jpg" alt="image">
+                    <p class="work__item__text">デバイス修理サイト</p>
+                </a>
+            </div>
+            <div class="work__item app is-active">
+                <a class="" href="../NumberTap/NumberTap.html" target="_blank" rel="noopener noreferrer">
+                    <img src="images/coming-soon.jpg" alt="image">
+                    <p class="work__item__text">数字タッチゲーム</p>
+                </a>
+            </div>
+            <div class="work__item app is-active">
+                <a class="" href="../NnmberCross/NumberCross.html" target="_blank" rel="noopener noreferrer">
+                    <img src="images/coming-soon.jpg" alt="image">
+                    <p class="work__item__text">数字並び替えゲーム</p>
+                </a>
+            </div>
         </div>
 
     </div>
