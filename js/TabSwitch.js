@@ -1,35 +1,42 @@
-// タブメニューの全クラス取得
+// タブスイッチの指定クラス全取得
 const tabSwitch = document.querySelectorAll('.js-tab-switch');
-// タブコンテンツの全クラス取得
-const tabTargets = document.querySelectorAll('.js-tab-target');
-// 全表示させるID取得
+// タブアイテムの指定クラス全取得
+const tabItem = document.querySelectorAll('.work__item');
+// タブコンテンツの指定ID取得
 const all = document.getElementById('all');
 // for文で
 for (let i = 0; i < tabSwitch.length; i++) {
-  // タブメニュークリック時
-  tabSwitch[i].addEventListener('click', (e) => {
-      // クリックされた要素（メニュー要素[トリガー要素]）を取得
-      let currentMenu = e.currentTarget;
-      // ターゲットとなる要素（タブメニューdata属性値と等しいid値を持つコンテンツ要素[ターゲット要素]）を取得
-      let currentContent = document.getElementById(currentMenu.dataset.id);
+// タブメニュークリック時
+  tabSwitch[i].addEventListener('click', (e)=>{
+// クリックされた要素を取得
+      const currentMenu = e.currentTarget;
+// タブスイッチのactive-lightクラスを全削除
+      for(let i = 0; i < tabSwitch.length; i++){
+          tabSwitch[i].classList.remove('active-light');
+      }
+      currentMenu.classList.add('active-light');
+      const currentContent = document.querySelectorAll(currentMenu.dataset.id);
       // すべてのタブメニューの'is-active'クラスを削除
-      for (let i = 0; i < tabSwitch.length; i++) {
+      for(let i = 0; i < tabSwitch.length; i++){
           tabSwitch[i].classList.remove('active-light');
       }
       // クリックしたタブメニューに'is-active'クラスを追加
       currentMenu.classList.add('active-light');
-      for (let i = 0; i < tabTargets.length; i++) {
-        tabTargets[i].classList.remove('is-active'); 
+    // すべてのタブコンテンツのクラスを削除
+      for (let i = 0; i < tabItem.length; i++) {
+        tabItem[i].classList.remove('is-active'); 
     }   
     // dataとidが一致してたらis-activeクラスを付与
             if(currentContent !== null) {
-                currentContent.classList.add('is-active');
+                for(let i = 0; i < currentContent.length; i++){
+
+                currentContent[i].classList.add('is-active');
             }
-  });
+        }
+    });
 }
-// 全部is-activeを加える
-all.addEventListener('click', () => {
-    for (let i = 0; i < tabTargets.length; i++) {
-        tabTargets[i].classList.add('is-active'); 
-    }
+all.addEventListener('click', ()=>{
+  for(let i = 0; i < tabItem.length; i++){
+    tabItem[i].classList.add('is-active'); 
+}   
 });
